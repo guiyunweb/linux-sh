@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "==============================安装依赖软件======================================"
-yum install gcc g++ make git libxml2-dev libxslt1-dev libgeoip-dev libgd-dev google-perftools libgoogle-perftools-dev libperl-dev libxslt libxml2 libxml2-dev libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP GeoIP-devel GeoIP-data gperftools gcc-c++
+yum install -y  gcc  make git  google-perftools   libxslt libxml2 libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP GeoIP-devel GeoIP-data gperftools gcc-c++
 
 wget http://nginx.org/download/nginx-1.19.6.tar.gz
 wget http://zlib.net/zlib-1.2.11.tar.gz
@@ -9,6 +9,11 @@ wget https://www.openssl.org/source/openssl-1.1.1k.tar.g
 wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
 git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
 
+
+tar -zxvf nginx-1.19.6.tar.gz
+tar -zxvf openssl-1.1.1k.tar.gz 
+tar -zxvf pcre-8.44.tar.gz
+tar -zxvf zlib-1.2.11.tar.gz
 
 
 cd openssl-1.1.1k/
