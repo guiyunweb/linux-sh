@@ -7,7 +7,7 @@ wget http://nginx.org/download/nginx-1.19.6.tar.gz
 wget http://zlib.net/zlib-1.2.11.tar.gz
 wget https://www.openssl.org/source/openssl-1.1.1k.tar.g
 wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
-git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
+git clone https://github.guiyunweb.com/yaoweibin/ngx_http_substitutions_filter_module
 
 
 tar -zxvf nginx-1.19.6.tar.gz
@@ -18,6 +18,7 @@ tar -zxvf zlib-1.2.11.tar.gz
 
 cd openssl-1.1.1k/
 ./config && make && make install
+cd ..
 
 echo "==============================编译安装软件======================================"
 cd nginx-1.19.6/
