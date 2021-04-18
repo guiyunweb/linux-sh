@@ -5,7 +5,7 @@ yum install -y  gcc  make git  google-perftools   libxslt libxml2 libxslt-devel 
 
 wget http://nginx.org/download/nginx-1.19.6.tar.gz
 wget http://zlib.net/zlib-1.2.11.tar.gz
-wget https://www.openssl.org/source/openssl-1.1.1k.tar.g
+wget https://www.openssl.org/source/openssl-1.1.1k.tar.gz
 wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
 git clone https://github.guiyunweb.com/yaoweibin/ngx_http_substitutions_filter_module
 
