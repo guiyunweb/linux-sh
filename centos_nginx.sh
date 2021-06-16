@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "==============================安装依赖软件======================================"
-yum install -y  gcc  make git  google-perftools   libxslt libxml2 libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP GeoIP-devel GeoIP-data gperftools gcc-c++
+yum install -y  gcc  make git  google-perftools  kernel-headers   libxslt libxml2 libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP GeoIP-devel GeoIP-data gperftools gcc-c++
 
 wget http://nginx.org/download/nginx-1.19.6.tar.gz
 wget http://zlib.net/zlib-1.2.11.tar.gz
