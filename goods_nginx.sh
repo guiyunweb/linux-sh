@@ -3,27 +3,27 @@
 echo "==============================安装依赖软件======================================"
 apt-get update
 apt-get install  gcc g++ make git libxml2-dev libxslt1-dev libgeoip-dev libgd-dev google-perftools libgoogle-perftools-dev libperl-dev -y
-wget https://nginx.org/download/nginx-1.21.0.tar.gz
+wget https://tengine.taobao.org/download/tengine-2.3.3.tar.gz
 wget http://zlib.net/zlib-1.2.11.tar.gz
 wget https://www.openssl.org/source/openssl-1.1.1k.tar.gz
-wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
+wget https://webwerks.dl.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.gz
 git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
 git clone -b dev https://github.com/cuber/ngx_http_google_filter_module
 
 
-tar -zxvf nginx-1.21.0.tar.gz
+tar -zxvf tengine-2.3.3.tar.gz
 tar -zxvf openssl-1.1.1k.tar.gz 
-tar -zxvf pcre-8.44.tar.gz
+tar -zxvf pcre-8.45.tar.gz
 tar -zxvf zlib-1.2.11.tar.gz
 
 cd openssl-1.1.1k/
 ./config && make && make install
 cd ..
 echo "==============================编译安装软件======================================"
-cd nginx-1.21.0/
+cd tengine-2.3.3/
 ./configure \
   --prefix=/usr/local/nginx \
-  --with-pcre=../pcre-8.44 \
+  --with-pcre=../pcre-8.45 \
   --with-openssl=../openssl-1.1.1k \
   --with-zlib=../zlib-1.2.11 \
   --add-module=../ngx_http_google_filter_module \
