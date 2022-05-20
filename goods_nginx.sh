@@ -14,7 +14,7 @@ git clone -b dev https://github.com/cuber/ngx_http_google_filter_module
 tar -zxvf tengine-2.3.3.tar.gz
 tar -zxvf openssl-1.1.1k.tar.gz 
 tar -zxvf pcre-8.45.tar.gz
-tar -zxvf zlib-1.2.11.tar.gz
+tar -zxvf zlib-1.2.12.tar.gz
 
 cd openssl-1.1.1k/
 ./config && make && make install
