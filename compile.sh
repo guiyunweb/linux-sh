@@ -8,7 +8,7 @@ wget https://image.guiyunweb.com/2021/maven-mvnd-0.8.2-linux-amd64.tar.gz
 
 # 解压
 tar -zxvf bellsoft-jdk11.0.16.1+1-linux-amd64.tar.gz
-unzip -d /usr/local/gradle gradle-7.5.1-bin.zip 
+unzip gradle-7.5.1-bin.zip 
 tar -xvf node-v16.18.0-linux-x64.tar.xz 
 tar -zxvf maven-mvnd-0.8.2-linux-amd64.tar.gz
 
