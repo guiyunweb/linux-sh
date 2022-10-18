@@ -14,8 +14,8 @@ tar -zxvf maven-mvnd-0.8.2-linux-amd64.tar.gz
 
 mv jdk-11.0.16.1 /usr/local/jdk
 mv gradle-7.5.1 /usr/local/gradle
-mv node-v16.18.0-linux-x64 /usr/local/node/
-mv maven-mvnd-0.8.2-linux-amd64 /usr/local/mvnd/
+mv node-v16.18.0-linux-x64 /usr/local/node
+mv maven-mvnd-0.8.2-linux-amd64 /usr/local/mvnd
 
 cat << EOF >> /etc/profile
 
