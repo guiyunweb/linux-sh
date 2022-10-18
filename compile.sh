@@ -7,10 +7,15 @@ wget https://nodejs.org/dist/v16.18.0/node-v16.18.0-linux-x64.tar.xz
 wget https://image.guiyunweb.com/2021/maven-mvnd-0.8.2-linux-amd64.tar.gz
 
 # 解压
-tar -zxvf bellsoft-jdk11.0.16.1+1-linux-amd64.tar.gz  -C /usr/local/jdk
+tar -zxvf bellsoft-jdk11.0.16.1+1-linux-amd64.tar.gz
 unzip -d /usr/local/gradle gradle-7.5.1-bin.zip 
-tar -zxvf node-v16.18.0-linux-x64.tar.xz -C /usr/local/jdk
-tar -zxvf maven-mvnd-0.8.2-linux-amd64.tar.gz  -C /usr/local/jdk
+tar -xvf node-v16.18.0-linux-x64.tar.xz 
+tar -zxvf maven-mvnd-0.8.2-linux-amd64.tar.gz
+
+mv jdk-11.0.16.1 /usr/local/jdk
+mv gradle-7.5.1 /usr/local/gradle
+mv node-v16.18.0-linux-x64 /usr/local/node/
+mv maven-mvnd-0.8.2-linux-amd64 /usr/local/mvnd/
 
 cat << EOF >> /etc/profile
 
