@@ -4,7 +4,7 @@ echo "==============================安装依赖软件==========================
 apt-get update
 apt-get install  gcc g++ make git libxml2-dev libxslt1-dev libgeoip-dev libgd-dev google-perftools libgoogle-perftools-dev libperl-dev -y
 wget https://tengine.taobao.org/download/tengine-2.3.3.tar.gz
-wget http://zlib.net/zlib-1.2.12.tar.gz
+wget http://zlib.net/zlib-1.2.13.tar.gz
 wget https://www.openssl.org/source/openssl-1.1.1k.tar.gz
 wget https://webwerks.dl.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.gz
 git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
