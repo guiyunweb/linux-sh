@@ -48,7 +48,7 @@ mkdir /usr/local/nginx/conf/stream.d
 
 touch /usr/local/nginx/conf/conf.d/default.conf
 
-cat << EOF >> /usr/local/nginx/conf/conf.d/default.conf
+cat << 'EOF' >> /usr/local/nginx/conf/conf.d/default.conf
  server {
     listen       80;
     server_name  localhost;
